@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Objects</title>
+</head>
+<body>
+    <script>
+
+        class Student {
+            constructor (name, adress, phone, course) {
+                this.name = name;
+                this.adress = adress;
+                this.phone = phone;
+                this.course = course;
+            }
+            get nameInfo() {
+                return "Student: " + " " + this.name;
+            }
+
+            get Info() {
+                return "Name:" + " " + this.name + "\n" +
+                       "Adress:" + " " + this.adress + "\n" +
+                       "Phone:" + " " + this.phone + "\n" +
+                       "Course:" + " " + this.course
+            }
+        }
+
+            var student1 = new Student ("John Newman", "1410 Meadow Street", "+1-211-333-0245", "Frontend JavaScript Development");
+            var student2 = new Student ("Jack Braun", "2558 5-th Avenue", "+1-111-444-0367", "PHP Web Development");
+            var student3 = new Student ("Brad Richer", "3223 6-th Avenue", "+1-311-555-0456", "Pyton Development");
+
+        console.log (student1.nameInfo);
+           console.log (student1.Info);
+
+        console.log (student2.nameInfo);
+           console.log (student2.Info);
+
+        console.log (student3.nameInfo);
+           console.log (student3.Info);
+
+    </script>
+</body>
+</html>
